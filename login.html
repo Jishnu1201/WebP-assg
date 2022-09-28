@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        #login-box {
+            border: solid 1pt black;
+            background-color:bisque;
+            margin:auto;
+            width: 20em;
+            position:relative ;
+            margin-top: 20%;
+        }
+        #login-padding {
+            padding: 10pt;
+        }
+        label {
+            padding: 10pt 30pt 30pt 30pt ; 
+        }
+
+    </style>
+</head>
+<body>
+    <div id="login-box">
+        <div id="login-padding">
+            <p> &nbsp Login </p>
+            <form id="login-form">
+                
+                    User :
+                    <select id="select-user" name="userType">
+                        <option value="student">Student</option>
+                        <option value="mess">Mess Caretaker</option>
+                        <option value="hostel">Hostel Office</option>
+                    </select>
+                </br>
+                <label></label><br>
+                    User ID :</br>
+                    <input id="userID" type="text" name="userID" maxlength="15em"/>
+                </label>
+                <label></br>
+                    Password :
+                    <input id="password" type="password" name="password" maxlength="15em"/>
+                </label></br></br>
+            </form>
+            <button class="submit" id="login-submit" type="submit" name="submit" value="submit" form="login-form"> Submit</button>
+        </div>
+    </div>
+</body>

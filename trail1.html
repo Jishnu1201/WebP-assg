@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            
+            // .addEventListener("keypress",myFunction);
+            // let ans = document.getElementById("inp").value;
+            function myFunction(ans)
+            {
+                //alert("Nikhil is an andi");
+                //VAR TEXT = dw3cef.getElementById
+            block = document.getElementById("inp")
+            document.addEventListener("keyup", myFunction(block.value));
+                var list=["apple","apple watch","apple macbook","apple macbook pro"];
+                var i=0;
+                var content = document.getElementById("list");
+                content.innerHTML = ""
+        
+                    for(i=0;i<list.length;i++)
+                    {
+                        if(list[i].startsWith(ans))
+                        {
+                            content.innerHTML = content.innerHTML + "<li>" + list[i] + "</li></br>";
+                        }
+                    }
+                
+            }
+            
+        </script>
+    </head>
+    <body>
+        <h1 style="text-align: center;">
+            WELCOME TO JAVASCRIPT
+        </h1>
+        <p id = "dummy">
+thdd
+<script>myFunction2();</script>
+        </p>
+        
+            <input id="inp" type="text" maxlength="25" name="text" onload="myFunction(value)" />
+
+        
+        
+        <ul id="list">
+
+        </ul>
+        
+    </body>
+</html>
