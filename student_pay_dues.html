@@ -5,31 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student_dues</title>
-</head>
+    <style>
+        .horizontal-bar a{
+            text-decoration: none;
+            padding:15pt;
+        }
+        .horizontal-bar a:hover{
+            font-size: larger;
+        }
+        .horizontal-bar {
+            background-color: bisque;
+            text-align: right;
+            font-size: larger;
+            height:1.5em;
+            padding:15pt;
+            margin-left: 15%;
+            margin-right: 0;
+        }
+        .nav-bar {
+            position: absolute;
+            nav-left: root;
+            margin-left: 0pt;
+            background-color: rgb(219, 155, 77);
+            top: 66px;
+            bottom: 0px;
+            width: 15%;
+        }
+        .nav-bar a{
+            font-size: x-large;
+            text-decoration: none;
+            background-color: rgb(214, 122, 10);
+            border: 2px solid rgb(199, 161, 115);
+            display: inline-block;
+            width: 99%;
+            height: 1.5em;
+            border-collapse: collapse;
+            padding-top: 0%;
+        }
+        .nav-bar a:hover{
+            font-size: xx-large;
+        }
+        #dues-payment {
+            margin-left: 15%;
+            display:block;
+            padding-left: 5%;
+            padding-top: 5%;
+            font-size: xx-large;
+        }
+        #dues-payment button, input, label {
+            display: block;
+            font-size: x-large;
+        }
+    </style>
 <body>
     <h2>NITC Mess Management</h2>
-    <div>
+    <div class="horizontal-bar">
         <a href="">Logout</a>
         <a href="">About</a>
         <a href="">Contact Us</a>
     </div>
     <br><br>
-    <nav>
+    <nav class="nav-bar">
         <a href="">Pay Fees</a><br>
         <a href="">Choose Mess</a>
     </nav>
 
-    <form action="", method="post">
-        <Label>Name:</Label>
-        <input type="text">
+    <form id="dues-payment" action="", method="post">
+        <Label><b>Name:</b></br> Deepak M</Label>
         <br>
-        <Label>Roll Number:</Label>
-        <input type="text">
+        <Label><b>Roll Number:</b></br> B190401CS</Label>
         <br>
-        <Label>Dues:</Label>
-        <input type="text">
+        <Label><b>Mobile Number:</b></br> 94XXX XX201</Label>
         <br>
-        <Button>Make payment</BUtton>
+        <Label><b>Dues:</b></br> Rs. 5795.00</Label>
+        
+        <br>
+        <Button onclick="confirm('Proceed for payment')"><label>Make payment</label></Button>
     </form>
 </body>
 </html>
