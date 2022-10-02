@@ -68,6 +68,15 @@
             display: inline-block;
             text-align: right;
         }
+
+        ul{
+            list-style: none;
+        }
+
+        #submit_button{
+            padding-left: 90%;
+            font-size: x-large;
+        }
     </style>
 </head>
 <body>
@@ -83,41 +92,45 @@
         <a href="">Choose Mess</a>
     </nav>
 
-    <div class="mess-list" id="mess-list-detailed">
-        <ul>
-            <li>
-                <h3>A mess</h3><br>
-                <span class="total-occupancy">Total occupancy: 375&nbsp;&nbsp;&nbsp;</span><span class="remaining-occupancy">Remaining occupancy: 75&nbsp;&nbsp;&nbsp;</span><span class="per-day-cost">Per Day cost: Rs 120.00</span>
-                <br>
-                <img src="/local-file-not-found.png" alt="", width="202", height="202">
-            </li>
-            <li>
-                <h3>B mess</h3><br>
-                <span class="total-occupancy">Total occupancy: 375&nbsp;&nbsp;&nbsp;</span><span class="remaining-occupancy">Remaining occupancy: 75&nbsp;&nbsp;&nbsp;</span><span class="per-day-cost">Per Day cost: Rs 120.00</span>
-                <br>
-                <img src="/local-file-not-found.png" alt="", width="202", height="202">
-            </li>
-            <li>
-                <h3>C mess</h3><br>
-                <span class="total-occupancy">Total occupancy: 375&nbsp;&nbsp;&nbsp;</span><span class="remaining-occupancy">Remaining occupancy: 75&nbsp;&nbsp;&nbsp;</span><span class="per-day-cost">Per Day cost: Rs 120.00</span>
-                <br>
-                <img src="/local-file-not-found.png" alt="", width="202", height="202">
-            </li>
-            <li>
-                <h3>D mess</h3><br>
-                <span class="total-occupancy">Total occupancy: 375&nbsp;&nbsp;&nbsp;</span><span class="remaining-occupancy">Remaining occupancy: 75&nbsp;&nbsp;&nbsp;</span><span class="per-day-cost">Per Day cost: Rs 120.00</span>
-                <br>
-                <img src="/local-file-not-found.png" alt="", width="202", height="202">
-            </li>
-            <li>
-                <h3>E mess</h3><br>
-                <span class="total-occupancy">Total occupancy: 375&nbsp;&nbsp;&nbsp;</span><span class="remaining-occupancy">Remaining occupancy: 75&nbsp;&nbsp;&nbsp;</span><span class="per-day-cost">Per Day cost: Rs 120.00</span>
-                <br>
-                <img src="/local-file-not-found.png" alt="", width="202", height="202">
-            </li>
-        </ul>
-    </div>
-    
     <form id="choose mess" action="" method="post">
-        
+        <div class="mess-list" id="mess-list-detailed">
+            <ul>
+                <li>
+                    <h3> <input type="radio" name="mess" value="A_mess">A mess</h3><br>
+                    <span class="total-occupancy">Total occupancy: 375&nbsp;&nbsp;&nbsp;</span><span class="remaining-occupancy">Remaining occupancy: 75&nbsp;&nbsp;&nbsp;</span><span class="per-day-cost">Per Day cost: Rs 120.00</span>
+                    <br>
+                    <img src="/local-file-not-found.png" alt="", width="202", height="202">
+                </li>
+                <li>
+                    <h3> <input type="radio" name="mess" value="B_mess">B mess</h3><br>
+                    <span class="total-occupancy">Total occupancy: 375&nbsp;&nbsp;&nbsp;</span><span class="remaining-occupancy">Remaining occupancy: 75&nbsp;&nbsp;&nbsp;</span><span class="per-day-cost">Per Day cost: Rs 120.00</span>
+                    <br>
+                    <img src="/local-file-not-found.png" alt="", width="202", height="202">
+                </li>
+                <li>
+                    <h3> <input type="radio" name="mess" value="C_mess">C mess</h3><br>
+                    <span class="total-occupancy">Total occupancy: 375&nbsp;&nbsp;&nbsp;</span><span class="remaining-occupancy">Remaining occupancy: 75&nbsp;&nbsp;&nbsp;</span><span class="per-day-cost">Per Day cost: Rs 120.00</span>
+                    <br>
+                    <img src="/local-file-not-found.png" alt="", width="202", height="202">
+                </li>
+                <li>
+                    <h3> <input type="radio" name="mess" value="D_mess">D mess</h3><br>
+                    <span class="total-occupancy">Total occupancy: 375&nbsp;&nbsp;&nbsp;</span><span class="remaining-occupancy">Remaining occupancy: 75&nbsp;&nbsp;&nbsp;</span><span class="per-day-cost">Per Day cost: Rs 120.00</span>
+                    <br>
+                    <img src="/local-file-not-found.png" alt="", width="202", height="202">
+                </li>
+                <li>
+                    <h3> <input type="radio" name="mess" value="E_mess">E mess</h3><br>
+                    <span class="total-occupancy">Total occupancy: 375&nbsp;&nbsp;&nbsp;</span><span class="remaining-occupancy">Remaining occupancy: 75&nbsp;&nbsp;&nbsp;</span><span class="per-day-cost">Per Day cost: Rs 120.00</span>
+                    <br>
+                    <img src="/local-file-not-found.png" alt="", width="202", height="202">
+                </li>
+            </ul>
+        </div> 
+        <div id="submit_button">
+            <input type="submit" value="Submit">
+        </div>
     </form>
+
+    </body>
+    </html>
