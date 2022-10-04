@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel_dues</title>
+    <style>
+        .horizontal-bar a{
+            text-decoration: none;
+            padding:15pt;
+        }
+        .horizontal-bar a:hover{
+            font-size: larger;
+        }
+        .horizontal-bar {
+            background-color: bisque;
+            text-align: right;
+            font-size: larger;
+            height:1.5em;
+            padding:15pt;
+            margin-left: 15%;
+            margin-right: 0;
+        }
+        .nav-bar {
+            position: absolute;
+            nav-left: root;
+            margin-left: 0pt;
+            background-color: rgb(219, 155, 77);
+            top: 66px;
+            bottom: 0px;
+            width: 15%;
+        }
+        .nav-bar a{
+            font-size: x-large;
+            text-decoration: none;
+            background-color: rgb(214, 122, 10);
+            border: 2px solid rgb(199, 161, 115);
+            display: inline-block;
+            width: 99%;
+            height: 1.5em;
+            border-collapse: collapse;
+            padding-top: 0%;
+        }
+        .nav-bar a:hover{
+            font-size: xx-large;
+        }
+        #hostel-list-detailed {
+            margin-left: 15%;
+            padding-top: 1%;
+            font-size: xx-large;
+        }
+        #dropday {
+            margin-left: 16%;
+            font-size: xx-large;
+        }
+        
+    
+    table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: x-large;
+  padding: 1%;
+
+}
+        
+    </style>
+</head>
+<body>
+    <p ></p>
+    <h2>NITC Hostel Administration</h2>
+    <div class="horizontal-bar">
+        <a href="">Logout</a>
+        <a href="">About</a>
+        <a href="">Contact Us</a>
+    </div>
+    <br><br>
+    <nav class="nav-bar">
+        <a href="">Home</a><br>
+        <a href="">Mess status</a><br>
+        <a href="">Student accessibility</a>
+    </nav>
+    <div class="day" id = "dropday">
+        No. of days: 
+        <select name="day">
+            <option value="01">1</option>
+            <option value="02">2</option>
+            <option value="03">3</option>
+            <option value="04">4</option>
+            <option value="05">5</option>
+            <option value="06">6</option>
+            <option value="07">7</option>
+            <option value="08">8</option>
+            <option value="09">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+       </select><br><br>            
+            
+            <form >
+                <label for="daycharge">Per day charge:  &#8377;</label>
+                <input type="text" id="charge" name="charge" style="width:25pt;height: 20pt;"><br><br>
+            </form>
+            
+            <table>
+                <tr>
+                  <th>STUDENT NAME</th>
+                  <th>ROLL NUMBER</th>
+                  <th>HOSTEL CHARGE</th>
+                  <th>MESS CHARGE</th>
+                  <th>TOTAL DUES</th>
+                  <th>PAYMENT STATUS</th>
+                </tr>
+                <tr>
+                  <td>Alfred Disouza</td>
+                  <td>BXXXXXXAA </td>
+                  <td>2100</td>
+                  <td>3600</td>
+                  <td>5700</td>
+                  <td><font color="green" size="5%">&#10004</font></td>
+                </tr>
+                <tr>
+                  <td>Christopher Perera</td>
+                  <td>BXXXXXXAA </td>
+                  <td>2100</td>
+                  <td>3600</td>
+                  <td>5700</td>
+                  <td><font color="red" size="5%">&#10060</font></td>
+                </tr>
+                <tr>
+                    <td>Fede Valverde</td>
+                    <td>BXXXXXXAA </td>
+                    <td>2100</td>
+                    <td>3300</td>
+                    <td>5400</td>
+                    <td><font color="green">&#10004</font></td>
+                </tr>
+                <tr>
+                    <td>Francisco Chang</td>
+                    <td>BXXXXXXAA </td>
+                    <td>2100</td>
+                    <td>3000</td>
+                    <td>5100</td>
+                    <td><font color="red">&#10060</font></td>
+                </tr>
+                <tr>
+                    <td>Mangolodaya Tarkowski</td>
+                    <td>BXXXXXXAA </td>
+                    <td>2100</td>
+                    <td>4100</td>
+                    <td>6200</td>
+                    <td><font color="red">&#10060</font></td>
+                </tr>
+              </table>
+            
+    </div>
+    
+
+    <script type="text/javascript">
+        document.getElementById('charge').value = '70';
+    </script>
+</body>

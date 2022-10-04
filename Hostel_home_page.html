@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel_homepage</title>
+    <style>
+        .horizontal-bar a{
+            text-decoration: none;
+            padding:15pt;
+        }
+        .horizontal-bar a:hover{
+            font-size: larger;
+        }
+        .horizontal-bar {
+            background-color: bisque;
+            text-align: right;
+            font-size: larger;
+            height:1.5em;
+            padding:15pt;
+            margin-left: 15%;
+            margin-right: 0;
+        }
+        .nav-bar {
+            position: absolute;
+            nav-left: root;
+            margin-left: 0pt;
+            background-color: rgb(219, 155, 77);
+            top: 66px;
+            bottom: 0px;
+            width: 15%;
+        }
+        .nav-bar a{
+            font-size: x-large;
+            text-decoration: none;
+            background-color: rgb(214, 122, 10);
+            border: 2px solid rgb(199, 161, 115);
+            display: inline-block;
+            width: 99%;
+            height: 1.5em;
+            border-collapse: collapse;
+            padding-top: 0%;
+        }
+        .nav-bar a:hover{
+            font-size: xx-large;
+        }
+        #hostel-list-detailed {
+            margin-left: 15%;
+            padding-top: 1%;
+            font-size: xx-large;
+        }
+        #bottom {
+        position: absolute;
+        bottom: 0;
+        left:50%
+        }
+    </style>
+</head>
+<body>
+    <p ></p>
+    <h2>NITC Hostel Administration</h2>
+    <div class="horizontal-bar">
+        <a href="">Logout</a>
+        <a href="">About</a>
+        <a href="">Contact Us</a>
+    </div>
+    <br><br>
+    <nav class="nav-bar">
+        <a href="">Hostel dues</a><br>
+        <a href="">Mess status</a><br>
+        <a href="">Student accessibility</a>
+    </nav>
+
+    <div class="hostel-list" id="hostel-list-detailed">
+        <ul>
+            <li>
+                <h4>Current Due payment period: 01/02/2022 - 05/02/2022</h4><br>
+            </li>
+            <li>
+                <h4>Total students: 250<br> Total rooms:275  </h4> 
+            </li> 
+        </ul>
+    </div>
+    <div id="bottom" ><h3>&nbsp&nbsp Contact:<br>Hostel warden<br>98XXXXXX08</h3></div>
+</body>
