@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mess_dues</title>
+    <style>
+        .horizontal-bar a{
+            text-decoration: none;
+            padding:15pt;
+        }
+        .horizontal-bar a:hover{
+            font-size: larger;
+        }
+        .horizontal-bar {
+            background-color: bisque;
+            text-align: right;
+            font-size: larger;
+            height:1.5em;
+            padding:15pt;
+            margin-left: 15%;
+            margin-right: 0;
+        }
+        .nav-bar {
+            position: absolute;
+            nav-left: root;
+            margin-left: 0pt;
+            background-color: rgb(219, 155, 77);
+            top: 66px;
+            bottom: 0px;
+            width: 15%;
+        }
+        .nav-bar a{
+            font-size: x-large;
+            text-decoration: none;
+            background-color: rgb(214, 122, 10);
+            border: 2px solid rgb(199, 161, 115);
+            display: inline-block;
+            width: 99%;
+            height: 1.5em;
+            border-collapse: collapse;
+            padding-top: 0%;
+        }
+        .nav-bar a:hover{
+            font-size: xx-large;
+        }
+        #hostel-list-detailed {
+            margin-left: 15%;
+            padding-top: 1%;
+            font-size: xx-large;
+        }
+        #messdues {
+            margin-left: 16%;
+            font-size: xx-large;
+        }
+        
+    
+    table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: x-large;
+  
+
+}
+        
+    </style>
+</head>
+<body>
+    <p ></p>
+    <h2>NITC Mess Management</h2>
+    <div class="horizontal-bar">
+        <a href="">Logout</a>
+        <a href="">About</a>
+        <a href="">Contact Us</a>
+    </div>
+    <br><br>
+    <nav class="nav-bar">
+        <a href="">Home</a><br>
+        <a href="">Mess details</a><br>
+    </nav>
+    <div class="mess" id = "messdues">            
+            <table>
+                <tr>
+                  <th>STUDENT NAME</th>
+                  <th>ROLL NUMBER</th>
+                  <th>ACTIVE DAYS</th>
+                  <th>TOTAL</th>
+                  <th>PAYMENT STATUS</th>
+                </tr>
+                <tr>
+                  <td>Alfred Disouza</td>
+                  <td>BXXXXXXAA </td>
+                  <td>25</td>
+                  <td>3000</td>
+                  <td><font color="green" size="5%">&#10004</font></td>
+                </tr>
+                <tr>
+                  <td>Christopher Perera</td>
+                  <td>BXXXXXXAA </td>
+                  <td>30</td>
+                  <td>3600</td>
+                  <td><font color="red" size="5%">&#10060</font></td>
+                </tr>
+                <tr>
+                    <td>Fede Valverde</td>
+                    <td>BXXXXXXAA </td>
+                    <td>31</td>
+                    <td>3720</td>
+                    <td><font color="green">&#10004</font></td>
+                </tr>
+                <tr>
+                    <td>Francisco Chang</td>
+                    <td>BXXXXXXAA </td>
+                    <td>28</td>
+                    <td>3360</td>
+                    <td><font color="red">&#10060</font></td>
+                </tr>
+                <tr>
+                    <td>Mangolodaya Tarkowski</td>
+                    <td>BXXXXXXAA </td>
+                    <td>31</td>
+                    <td>3720</td>
+                    <td><font color="red">&#10060</font></td>
+                </tr>
+              </table>
+            
+    </div>
+    
+
+    <script type="text/javascript">
+        document.getElementById('charge').value = '70';
+    </script>
+</body>
