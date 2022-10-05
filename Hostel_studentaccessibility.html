@@ -4,12 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mess_incharge</title>
+    <title>Hostel_studentaccess</title>
     <style>
-        .incharge-details{
-            margin-left: 16%;
-            padding-top: 1%;
-        }
         .horizontal-bar a{
             text-decoration: none;
             padding:15pt;
@@ -50,12 +46,8 @@
             font-size: xx-large;
         }
         #hostel-list-detailed {
-            margin-left: 15%;
+            margin-left: 17%;
             padding-top: 1%;
-            font-size: xx-large;
-        }
-        #dropday {
-            margin-left: 16%;
             font-size: xx-large;
         }
         #top{
@@ -63,21 +55,11 @@
         top: 17%;
         right:2%;
         }
-    
-    table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-  text-align: center;
-  font-size: x-large;
-  padding: 1%;
-
-}
-        
-</style>
+    </style>
 </head>
 <body>
+    <p ></p>
     <h2>NITC Hostel Administration</h2>
-    
     <div class="horizontal-bar">
         <a href="">Logout</a>
         <a href="">About</a>
@@ -85,16 +67,21 @@
     </div>
     <br><br>
     <nav class="nav-bar">
-        <a href="">Mess Dues</a><br>
-        <a href="">Mess Details</a>
+        <a href="">Hostel dues</a><br>
+        <a href="">Student accessibility</a>
+        <a href="">Change password</a>
     </nav>
 
-    
-    <div class="incharge-details">
-        <h2> Mess In-charge Page </h2>
-        <img src="" alt="mess image">
-        <h3>Next mess dues are to be updated by 28/10/22</h3>
-        <h3>Current payment period: 01/10/22 - 05/10/22</h3>
+    <div class="hostel-list" id="hostel-list-detailed">
+        <form>
+            <label for="start"> Payment start date:</label>
+            <input type="date" id="start" name="start"><br>
+            <label for="end">Payment end date:&nbsp</label>
+            <input type="date" id="end" name="end">
+            <input type="submit">
+          </form>
+          <br><br>
+        Student page accessibility: <font color="green" size="10%">&#10004</font>
     </div>
-    <div id="top" ><h2>Mess:A</h2></div>
+    <div id="top" ><h2>Hostel:A</h2></div>
 </body>
