@@ -3,11 +3,11 @@
     <style>
         #login-box {
             border: solid 1pt black;
-            background-color:bisque;
+            background-color:#A45EE9;
             margin:auto;
             width: 20em;
             position:relative ;
-            margin-top: 20%;
+            margin-top: 12%;
         }
         #login-padding {
             padding: 10pt;
@@ -15,10 +15,20 @@
         label {
             padding: 10pt 30pt 30pt 30pt ; 
         }
-
+        header h1 {
+        font-size: 312.5%;
+        background-color: #461f4d;
+        color: #fdfdfe;
+        text-shadow: 0px 0px 5px #8b54c2, 0px 0px 10px #a158e1, 0px 0px 10px #3f1c62,
+            0px 0px 20px #a26cd7;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
+    <header>
+        <h1>NITC MESS MANAGEMENT</h1>
+    </header>
     <div id="login-box">
         <div id="login-padding">
             <p> &nbsp Login </p>
@@ -36,7 +46,7 @@
                     <input id="userID" type="text" name="userID" maxlength="15em"/>
                 </label>
                 <label></br>
-                    Password :
+                    Password :<br>
                     <input id="password" type="password" name="password" maxlength="15em"/>
                 </label></br></br>
             </form>

@@ -6,62 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student_dues</title>
     <style>
-        .horizontal-bar a{
+         .horizontal-bar a{
             text-decoration: none;
-            padding:15pt;
+            color: white;
+            padding-right:1.5%;
         }
         .horizontal-bar a:hover{
-            font-size: larger;
+            font-size: 150%;
         }
         .horizontal-bar {
-            background-color: bisque;
+            background-color: #B660CD;
             text-align: right;
-            font-size: larger;
-            height:1.5em;
-            padding:15pt;
+            font-size: 120%;
+            
             margin-left: 15%;
-            margin-right: 0;
+            margin-right: 0%;
         }
         .nav-bar {
             position: absolute;
             nav-left: root;
-            margin-left: 0pt;
-            background-color: rgb(219, 155, 77);
-            top: 66px;
-            bottom: 0px;
+            margin-left: 0%;
+            background-color:#9866C5;
+            top: 17.5%;
+            bottom: 0%;
             width: 15%;
         }
         .nav-bar a{
-            font-size: x-large;
+            font-size: 150%;
             text-decoration: none;
-            background-color: rgb(214, 122, 10);
-            border: 2px solid rgb(199, 161, 115);
+            color: white;
+            background-color: #710193;
+            border: 2px solid #E39FF6;
             display: inline-block;
             width: 99%;
-            height: 1.5em;
+            height: 7%;
             border-collapse: collapse;
             padding-top: 0%;
         }
         .nav-bar a:hover{
-            font-size: xx-large;
+            font-size: 200%;
         }
         #dues-payment {
             margin-left: 15%;
             display:block;
             padding-left: 5%;
-            padding-top: 5%;
-            font-size: xx-large;
+            padding-top: 2%;
+            font-size: 175%;
         }
         #dues-payment button, input, label {
             display: block;
-            font-size: x-large;
+            font-size: 90%;
+        }
+        #logo{ 
+        position:fixed; 
+        top:0%; 
+        left:0%; 
+        } 
+        header h1 {
+        font-size: 312.5%;
+        background-color: #461f4d;
+        color: #fdfdfe;
+        text-shadow: 0px 0px 5px #8b54c2, 0px 0px 10px #6e30ac, 0px 0px 10px #3f1c62,
+            0px 0px 20px #a26cd7;
+            text-align: center;
         }
     </style>
 <body>
-    <h2>NITC Mess Management</h2>
+    <header>
+        <h1>NITC MESS MANAGEMENT</h1>
+    </header>
+    <img id="logo" src="./nitc.png" style="float: left; position: absolute;" height="16%" width="10%"  />
     <div class="horizontal-bar">
+        <marquee direction="left" >
+            <h2>Welcome to Mess Administration </h2></marquee> 
         <a href="">Logout</a>
-        <a href="">About</a>
+        <a href="https://www.google.com">About</a>
         <a href="">Contact Us</a>
     </div>
     <br><br>
